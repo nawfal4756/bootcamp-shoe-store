@@ -5,6 +5,8 @@ import './App.css';
 import MenuBar from './Components/MenuBar/MenuBar';
 import {Home} from './Components/Home/Home';
 import {StoreHome} from './Components/StoreHome/StoreHome';
+import {MenStoreHome} from './Components/MenStoreHome/MenStoreHome';
+import {WomenStoreHome} from './Components/WomenStoreHome/WomenStoreHome';
 
 
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
@@ -15,9 +17,9 @@ function App() {
       <MenuBar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/store" >
-          <Route path="/" component={StoreHome} />
-        </Route>
+        <Route exact path="/store" component={StoreHome}/>
+        <Route exact path="/men" component={MenStoreHome} />
+        <Route exact path="/women" component={WomenStoreHome} />
       </Switch>
     </Router>
   );
