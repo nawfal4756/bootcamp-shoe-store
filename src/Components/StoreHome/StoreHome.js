@@ -8,7 +8,7 @@ export const StoreHome = () => {
     return (
         <div className={styles.container}>
             <Paper elevation={3} className={styles.paper}>
-                <h1 className={styles.heading}>Welcome To Nawfal's Shoe Store</h1>
+                <h1 className={styles.heading}>Shoe Store</h1>
                 <Grid container justify="center" spacing={2}>
 
                     <Grid item xs={12} md={5}>
